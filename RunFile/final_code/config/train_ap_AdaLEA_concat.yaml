@@ -1,0 +1,52 @@
+# Directories arguments
+data_root: "./ap_train_dataset/DoTA_based/semi_output/hidden_state/absolute_fol_concat/"
+checkpoint_dir: "./checkpoints/train_on_DoTA/concatenation/AdaLEA/"
+future_context_size: 128
+
+# dataset arguments
+seed_max: 5
+segment_len: 16
+
+# training parameters
+train_epoch: 50
+lr: 0.0001
+
+lambda_fol: 1
+lambda_ego: 1
+device: 'cuda'
+
+# fol model parameters
+pred_timesteps: 10
+input_embed_size: 512
+flow_enc_size: 512
+box_enc_size: 512
+with_ego: False #True
+
+enc_hidden_size: 512 # no use
+enc_concat_type: "cat"
+predictor_input_size: 512
+dec_hidden_size: 512
+pred_dim: 4
+
+
+# ego_pred model parameters
+ego_embed_size: 128
+ego_enc_size: 128
+ego_dec_size: 128
+ego_pred_input_size: 128
+ego_dim: 3
+
+# dataloader parameters
+batch_size: 1
+shuffle: True
+num_workers: 0
+
+# image parameters
+H: 720
+W: 1280
+channels: 3
+
+flow_roi_size: [5,5,2]
+
+# Anomaly detection parameters
+max_age: 10
