@@ -203,7 +203,7 @@ AP_model.eval()
 #===================================================================
 # Need to Set UP.
 #===================================================================
-test_dataset_path = "./test_dataset/0_test/bbox_flow_p_200_n_100"  #/bbox_flow_frame"  #"./test_dataset/DoTA"
+test_dataset_path = "./test_dataset/0_test/bbox_flow_pos_neg"  #/bbox_flow_frame"  #"./test_dataset/DoTA"
 save_path = "./ap_result/bbox_flow_pos_neg_test_deltaAda2/"
 # test_dataset_path = args.test_dataset_path
 # save_path = args.save_path
